@@ -1,0 +1,35 @@
+#SOLUCION: MISION Kit Seguro
+nombre = input("Nombre: ").upper().strip()
+kit = input("Tipo de kit: ").lower().strip()
+autorizacion = input("Tiene autorización (si/no)? ").lower().strip()
+
+# Validación cantidad
+while True:
+    try:
+        cantidad = int(input("Cantidad de Kits?: "))
+        if 1 <= cantidad <= 100:
+            break
+        else:
+            print("Cantidad de kits invalida, digite del 1 al 100")
+    except ValueError:
+        print("Cantidad de kits invalida, digite del 1 al 100")
+        
+        
+# Validación dias
+while True:
+    try:
+        dias = int(input("Dias de préstamo: "))
+        if dias >= 1:
+            break
+        else:
+            print("Dias invalidos, debe ser 1 o más")
+    except ValueError:
+        print("Dias invalidos, debe digitar un número")
+
+# Lógica de la misión
+if autorizacion != "si":
+    print(f"{nombre}: NO AUTORIZADO")
+elif cantidad > 2 or dias > 7:
+    print(f"{nombre}: Préstamo no permitido: excede límites")
+else:
+    print(f"{nombre}: Préstamo aprobado - Kit {kit} x{cantidad} por {dias} dias")
