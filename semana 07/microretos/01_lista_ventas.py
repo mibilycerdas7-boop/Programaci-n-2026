@@ -1,18 +1,25 @@
-"""Microreto 1: recuperar lo aprendido sobre listas.
+from sedes import sedes
 
-Prediga la salida, modifique una posición y explique el cambio.
-"""
+#Acceso a a listas de sesde de emprenimientos
+print("Sedes registradas:", len(sedes))
+print("Primera sede:", sedes[0]['nombre'])
+print("Ventas de la primera sede:", sedes[0]["ventas"])
 
-# Una lista conserva el orden: índice 0 = primer día, índice 1 = segundo día.
-ventas = [85000, 92000, 78000]
-print("Venta del segundo día:", ventas[1])
-print("Total inicial:", sum(ventas))
+print("\nANÁLISIS SEMANAL DE EMPREDIMIENTOS")
 
-# La venta del segundo día se corrigió de 92000 a 100000.
-# TODO: actualice la posición adecuada con una asignación por índice.
-
-print("Segundo día corregido:", ventas[1])
-print("Total corregido:", sum(ventas))
-
-# Para explicar: ¿por qué no cambió la cantidad de elementos?
-# Para comprobar: el total pasa de 255000 a 263000; aumenta 8000.
+for sede in sedes:
+    total = sum(sede["ventas"])
+    porcentaje = total / sede['meta'] * 100
+    
+    #Clasificación
+    if porcentaje >= 100:
+        estado = "Meta Alcanzada"
+    elif porcentaje >= 80:
+        estado = "Cerca de la meta"
+    else:
+        estado = "Requiere atención"
+    
+    print(
+        f"{sede['nombre']} | Total:₡{total:,.2f} | "
+        f"Cumpliento: {porcentaje:.2f}% | {estado}"
+    )
