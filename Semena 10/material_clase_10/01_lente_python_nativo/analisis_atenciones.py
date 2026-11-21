@@ -26,6 +26,7 @@ def concluir(atenciones):
     print("Minutos espera:", atenciones["minutos_espera"].sum())
     print("Promedio espera:", atenciones["minutos_espera"].mean())
     print("Mediana espera:", atenciones["minutos_espera"].median())
+    
     for atencion in atenciones:
         # Los nombres ya vienen uniformes en el CSV.
         # Contamos cada categoría en su diccionario con .get().

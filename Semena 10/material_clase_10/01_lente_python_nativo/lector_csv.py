@@ -11,7 +11,6 @@ def cargar_atenciones(ruta_csv=ARCHIVO_CSV):
     """Devuelve las atenciones del CSV como una lista de diccionarios."""
     atenciones = []
 
-    try:
         with open(ruta_csv, mode="r", encoding="utf-8-sig", newline="") as archivo:
             lector = csv.DictReader(archivo)
 
