@@ -1,0 +1,13 @@
+cedula,nombre_paciente,edad,provincia,fecha_atencion,hospital,diagnostico,medicamento,minutos_espera
+1-0000-0101,Ana Morales Rojas,29,San José,2026-10-03,Hospital Regional Los Robles,Infección respiratoria alta,Paracetamol,20
+2-0000-0102,Carlos Vega Solano,54,Alajuela,2026-10-04,Hospital Regional Los Robles,Infección respiratoria alta,Paracetamol,40
+3-0000-0103,Lucía Chaves Mora,61,Cartago,2026-10-05,Hospital Metropolitano de Occidente,Hipertensión arterial,Losartán,60
+1-0000-0101,Ana Morales Rojas,29,San José,2026-10-11,Hospital Regional Los Robles,Gastritis,Omeprazol,30
+5-0000-0105,Valeria Quesada Soto,22,Guanacaste,2026-10-12,Clínica Integral Río Claro,Migraña,Ibuprofeno,25
+2-0000-0102,Carlos Vega Solano,54,Alajuela,2026-10-13,Hospital Metropolitano de Occidente,Hipertensión arterial,Losartán,65
+4-0000-0104,Diego Jiménez Araya,35,Heredia,2026-10-14,Clínica Integral Río Claro,Migraña,Ibuprofeno,35
+3-0000-0103,Lucía Chaves Mora,61,Cartago,2026-10-15,Hospital Metropolitano de Occidente,Diabetes tipo 2,Metformina,45
+6-0000-0106,Andrés Campos Ruiz,18,Puntarenas,2026-10-16,Hospital Regional Los Robles,Asma,Salbutamol,15
+7-0000-0107,Mariana Brenes Salas,42,Limón,2026-10-17,Hospital Metropolitano de Occidente,Infección respiratoria alta,Paracetamol,55
+4-0000-0104,Diego Jiménez Araya,35,Heredia,2026-10-19,Hospital Regional Los Robles,Infección urinaria,Nitrofurantoína,50
+1-0000-0108,Sofía Rojas Pérez,31,San José,2026-10-21,Clínica Integral Río Claro,Dermatitis alérgica,Loratadina,40
